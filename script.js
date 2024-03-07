@@ -74,18 +74,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const errorInput = inputElement;
 
-    // if (errorInput === emailInput) {
-    //   errorInput.setAttribute("placeholder", "email@example.com");
-    //   if (!validateEmailInput(errorInput.value)) {
-    //     errorMessage.style.display = "flex";
-    //     errorInput.classList.add("error");
-    //     return;
-    //   }
-    // }
-
     if (errorInput === emailInput) {
       if (!validateEmailInput(errorInput.value)) {
         errorMessage.style.display = "flex";
+        errorInput.value = '';
         errorInput.classList.add("error");
         errorInput.classList.add("error-input");
         errorInput.placeholder = "email@example.com";
@@ -106,13 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function allInputsValid(elements) {
-    // if (elements.forEach((el) => el.classList.contains("error"))) {
-    //   // return true;
-    //   console.log("I have the error class");
-    // } else {
-    //   // return false;
-    //   console.log("Unavailable");
-    // }
     return elements.some((el) => el.classList.contains("error"));
   }
 });
