@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
       passwordInput.blur();
 
       // message.style.animation = "messageAnimation 5s ease-in 0.75s";
-      message.classList.add('message-animation');
+      message.classList.remove('message-animation');
 
       // Trigger reflow to recalculate dimensions & positioning
       void message.offsetWidth;
