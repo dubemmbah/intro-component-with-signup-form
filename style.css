@@ -202,7 +202,11 @@ body {
   text-align: center;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  /* animation: messageAnimation 5s ease-in 0.75s; */
+
+}
+
+.message-animation {
+    animation: messageAnimation 5s ease-in 0.75s;
 }
 
 @keyframes messageAnimation {
