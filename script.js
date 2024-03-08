@@ -60,7 +60,14 @@ document.addEventListener("DOMContentLoaded", function () {
       emailInput.blur();
       passwordInput.blur();
 
-      message.style.animation = "messageAnimation 5s ease-in 0.75s";
+      // message.style.animation = "messageAnimation 5s ease-in 0.75s";
+      message.classList.add('message-animation');
+
+      // Trigger reflow to recalculate dimensions & positioning
+      void message.offsetWidth;
+
+      // Adding message animation class
+      message.classList.add('message-animation');
     } else {
       console.log("Some invalid inputs");
     }
