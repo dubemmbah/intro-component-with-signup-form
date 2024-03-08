@@ -206,7 +206,7 @@ body {
 }
 
 .message-animation {
-    animation: messageAnimation 5s ease-in 0.75s;
+    animation: messageAnimation 5s ease-in 0.4s;
 }
 
 @keyframes messageAnimation {
